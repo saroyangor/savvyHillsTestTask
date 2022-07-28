@@ -6,7 +6,7 @@ export interface IButtonProps {
   onClick?: () => void
 }
 
-const Button = (props: IButtonProps) => {
+const Button: React.FC<IButtonProps> = (props) => {
 
   return (
     <button className={styles.btn} {...props}>

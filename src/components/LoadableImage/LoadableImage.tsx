@@ -7,7 +7,7 @@ type ILoadableImage = {
   alt?: string
 }
 
-const LoadableImage = (props: ILoadableImage) => {
+const LoadableImage: React.FC<ILoadableImage> = (props) => {
   const {src, alt = ""} = props
   const [isLoaded, setIsLoaded] = useState(false)
   const imageRef = useRef<HTMLImageElement | null>(null)

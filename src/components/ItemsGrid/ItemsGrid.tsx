@@ -14,7 +14,7 @@ type ItemsGrid = {
   data: ImageItem[]
 }
 
-const ItemsGrid = (props: ItemsGrid) => {
+const ItemsGrid: React.FC<ItemsGrid> = (props) => {
   return (
     <div className={styles.container}>
       {props.data.map((item) => {

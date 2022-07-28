@@ -16,7 +16,7 @@ import space from "../../assets/images/space.svg"
 import sunglasses from "../../assets/images/sunglasses.svg"
 import ties from "../../assets/images/ties.svg"
 
-const Menu = () => {
+const Menu: React.FC = () => {
   const active = useAppSelector(state => state.menu.active)
   const items = useAppSelector(state => state.categories.categories)
   const dispatch = useAppDispatch()

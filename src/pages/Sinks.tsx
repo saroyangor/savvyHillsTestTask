@@ -15,7 +15,7 @@ type ImageItem = {
   height: number
 }
 
-const Sinks = () => {
+const Sinks: React.FC = () => {
   const [data, setData] = useState<ImageItem[]>([])
   const page = useAppSelector(state => state.page.activePage)
   const dispatch = useAppDispatch()
